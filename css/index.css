@@ -1,0 +1,433 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+header {
+    left: 0;
+    opacity: .9;
+    background-image: url("../images/back2.jpg");
+    background-size: contain;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 99;
+    font-family: "Fredericka The Great";
+    
+}
+
+.image {
+    size: 100%;
+    float: left;
+    width: 7%;
+    height: 775px;
+    z-index: 99;
+}
+
+.constImg {
+
+    transition: 0.5s ease;
+    opacity: .5;
+}
+
+.constImg:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+#const {
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    margin-left: 5%;
+    float: left;
+    font-size: 30px;
+    margin-top: 2%;
+}
+
+#home {
+    margin-left: 40%;
+    padding-bottom: 10%;
+}
+
+#home,
+#about,
+#contact {
+    cursor: pointer;
+    padding-left: 2%;
+    color: white;
+    font-weight: 900;
+    text-align: justify;
+    font-size: 30px;
+}
+
+#myBtn {
+    opacity: .7;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: url("../images/back2.jpg");
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    font-family: "Fredericka The Great"
+  }
+  
+  #myBtn:hover {
+    background: url("../images/back2.jpg");
+    background-size: cover;
+
+    
+  }
+
+#intro {
+    margin-top: 1%;
+    background: url("../images/mig_brick.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 1200px;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+     -ms-animation: fadein 2s; /* Internet Explorer */
+      -o-animation: fadein 2s; /* Opera < 12.1 */
+         animation: fadein 2s;
+}
+
+@keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+#migText {
+    padding-top: 10%;
+}
+
+#migText,
+#miguText {
+    margin-top: -10%;
+    text-align: center;
+    color: white;
+    font-family: "Trirong";
+    font-weight: bolder;
+    -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 6s; /* Firefox < 16 */
+    -ms-animation: fadein 6s; /* Internet Explorer */
+    -o-animation: fadein 6s; /* Opera < 12.1 */
+    animation: fadein 6s;
+}
+
+@keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+#miguText {
+    padding-top: 25%;
+}
+
+#box {
+    padding-top: 1%;
+    margin-top: 5%;
+    margin-left: 10%;
+    font-size: 23px;
+    font-weight: 900;
+    text-align: center;
+    background: linear-gradient(75deg,  grey, white, grey, white, grey, white);
+    width: 75%;
+    height: 100px;
+    font-family: "Trirong";
+    opacity: .9;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#promise {
+    padding-top: 5%;
+    text-align: center;
+    font-family: "Trirong";
+    margin-top: 20%;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(75deg,  grey, rgb(221, 220, 220), grey, rgb(221, 220, 220),grey, rgb(221, 220, 220), grey, rgb(221, 220, 220));
+}
+
+#promTitle {
+    border-bottom: double;
+}
+
+#promCont {
+    padding-top: 5%;
+}
+
+#whatOffer {
+    text-align: center;
+    margin-top: 35%;
+    margin-left: 28%;
+    width: 675px;
+    height: 150px;
+    padding-top: 4.7%;
+    font-weight: 900;
+    background: url("../images/shelf.jpg") 100%;
+    background-size: 100% 70%;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    opacity: .9;
+}
+
+.remServe {
+    font-family: "Trirong";
+    font-size: 18px;
+    transform: scale(2);
+    color: rgb(39, 39, 39);
+    font-weight: 500;
+}
+
+
+
+#services {
+    margin-top: 4%;
+    -moz-border-top-left-radius: 10px;
+    -moz-border-top-right-radius: 10px;
+    -webkit-border-radius-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#services3 {
+    -moz-border-bottom-left-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+    -webkit-border-radius-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#services,
+#services2,
+#services3 {
+    padding-top: 5.5%;
+    text-align: center;
+    margin-left: 10%;
+    width: 500px;
+    height: 150px;
+    background: url("../images/shelf.jpg") 100%;
+    background-size: 100% 100%;
+    opacity: .9;
+}
+
+#services4 {
+    margin-top: -30%;
+    -moz-border-top-left-radius: 10px;
+    -moz-border-top-right-radius: 10px;
+    -webkit-border-radius-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#services6 {
+    -moz-border-bottom-left-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+    -webkit-border-radius-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#services4,
+#services5,
+#services6 {
+    padding-top: 5.5%;
+    text-align: center;
+    margin-left: 55%;
+    width: 500px;
+    height: 150px;
+    background: url("../images/shelf.jpg") 100%;
+    background-size: 100% 100%;
+    opacity: .9;
+}
+
+@-moz-document url-prefix() {
+    #services4 {
+        margin-top: -30%;
+    }
+}
+
+
+#contactUs {
+    margin-top: 10%;
+    background: url("../images/design.jpg") 100%;
+    background-size: 100%;
+    width: 100%;
+    height: 900px;
+}
+
+.fa-calendar {
+    padding-top: 10%;
+    margin-left: 47%;
+    color: white;
+}
+
+#schApp {
+    padding-top: 2%;
+    margin-left: 2%;
+    color: white;
+    font-family: "Trirong";
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+}
+
+#schCont {
+    margin-top: 5%;
+    margin-left: 18%;
+    text-align: center;
+    color: white;
+    width: 1000px;
+}
+
+.hvr-sweep-to-top {
+    text-align: center;
+    font-family: "Trirong";
+    padding-top: .5%;
+    margin-left: 41%;
+    margin-top: 3%;
+    font-weight: 900;
+    font-size: 30px;
+    color: white;
+    width: 300px;
+    height: 75px;
+    -moz-border-top-left-radius: 10px;
+    -moz-border-top-right-radius: 10px;
+    -webkit-border-radius-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+    -webkit-border-radius-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: solid;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .hvr-sweep-to-top:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: grey;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
+    color: white;
+  }
+  .hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+
+.foot {
+    background: url("https://wallpapercave.com/wp/wp2793157.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+}
+
+#cont {
+    font-size: 14px;
+    font-family: "Fredericka The Great";
+    font-weight: 900;
+    color: black;
+    padding-left: 2%;
+    padding-top: 1%;
+}
+
+#copyright {
+    font-size: 18px;
+    font-family: "Fredericka The Great";
+    font-weight: 900;
+    color: black;
+    padding-left: 42%;
+    padding-top: 1%;
+
+}
+
+
+
+
+  
+
+
