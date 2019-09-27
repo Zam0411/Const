@@ -18,6 +18,27 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-var width = 800;
-var height = 600;
-browser.driver.manage().window().setSize(width, height);
+
+var hello = "hello";
+var bye = "bye";
+var bro = "sandia";
+
+var array = [hello, bye, bro];
+
+console.log(array);
+
+
+$(document).ready(function() {
+
+
+
+  $("#box").on("click", function() {
+    $(".papaJohn").hide();
+  });
+
+  $("#miguText").on("click", function() {
+    $(".papaJohn").show();
+  });
+
+});
+

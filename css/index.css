@@ -8,7 +8,7 @@ html, body {
     overflow-x: hidden;
 }
 
-header {
+.header {
     left: 0;
     opacity: .9;
     background-image: url("../images/back2.jpg");
@@ -19,52 +19,85 @@ header {
     height: 10%;
     z-index: 99;
     font-family: "Fredericka The Great";
-    
 }
 
-.image {
-    size: 100%;
-    float: left;
-    width: 7%;
-    height: 775px;
-    z-index: 99;
-}
 
 .constImg {
-
+    padding: 25px;
     transition: 0.5s ease;
-    opacity: .5;
+    opacity: .8;
+    width: 25%;
+    height: 50%;
 }
 
 .constImg:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.2);
     opacity: 1;
 }
 
+.imgCont {
+    transition: 0.5s ease;
+    position: relative;
+    opacity: .7;
+    background: black;
+    padding-left: 20%;
+    float: left;
+    overflow: auto;
+    margin-top: 10%;
+    width: 100%;
+    height: 350px;
+    transform: scale(1.1);
+}
+
+.imgCont:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.outer {
+    overflow: hidden;
+}
+
+
+
+.img {
+    width: 500px;
+    height: 500px;
+    margin-top: 5%;
+    margin-left: 35%;
+    transform: rotate(90deg);
+}
+
+
 #const {
+    padding-left: 5%;
     text-align: center;
     color: white;
     font-weight: 900;
-    margin-left: 5%;
     float: left;
-    font-size: 30px;
-    margin-top: 2%;
+    font-size: 25px;
+    margin-top: 1%;
 }
 
-#home {
-    margin-left: 40%;
-    padding-bottom: 10%;
+.header-right {
+    padding-right: 2%;
+    float: right;
+}
+
+#about,
+#contact {
+   padding-left: 50px;
+    
 }
 
 #home,
 #about,
 #contact {
+    
     cursor: pointer;
-    padding-left: 2%;
     color: white;
     font-weight: 900;
-    text-align: justify;
     font-size: 30px;
 }
 
@@ -94,6 +127,7 @@ header {
   }
 
 #intro {
+    font-family: "Trirong";
     margin-top: 1%;
     background: url("../images/mig_brick.jpg");
     background-attachment: fixed;
@@ -130,17 +164,23 @@ header {
  to   { opacity: 1; }
 }
 
+.closeBtn {
+    margin-left: 50%;
+}
+
+#miguText {
+    padding-top: 15%;
+}
+
 #migText {
     padding-top: 10%;
 }
 
 #migText,
 #miguText {
-    margin-top: -10%;
     text-align: center;
     color: white;
-    font-family: "Trirong";
-    font-weight: bolder;
+    font-weight: 900;
     -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 6s; /* Firefox < 16 */
     -ms-animation: fadein 6s; /* Internet Explorer */
@@ -171,9 +211,6 @@ from { opacity: 0; }
 to   { opacity: 1; }
 }
 
-#miguText {
-    padding-top: 25%;
-}
 
 #box {
     padding-top: 1%;
@@ -184,7 +221,7 @@ to   { opacity: 1; }
     text-align: center;
     background: linear-gradient(75deg,  grey, white, grey, white, grey, white);
     width: 75%;
-    height: 100px;
+    height: 175px;
     font-family: "Trirong";
     opacity: .9;
     -moz-border-radius: 10px;
@@ -196,7 +233,7 @@ to   { opacity: 1; }
     padding-top: 5%;
     text-align: center;
     font-family: "Trirong";
-    margin-top: 20%;
+    margin-top: 7%;
     width: 100%;
     height: 600px;
     background: linear-gradient(75deg,  grey, rgb(221, 220, 220), grey, rgb(221, 220, 220),grey, rgb(221, 220, 220), grey, rgb(221, 220, 220));
@@ -210,13 +247,14 @@ to   { opacity: 1; }
     padding-top: 5%;
 }
 
+
 #whatOffer {
     text-align: center;
-    margin-top: 35%;
-    margin-left: 28%;
-    width: 675px;
+    margin-top: 65%;
+    margin-left: 15%;
+    width: 50%;
     height: 150px;
-    padding-top: 4.7%;
+    padding-top: 6.7%;
     font-weight: 900;
     background: url("../images/shelf.jpg") 100%;
     background-size: 100% 70%;
@@ -228,7 +266,7 @@ to   { opacity: 1; }
 
 .remServe {
     font-family: "Trirong";
-    font-size: 18px;
+    font-size: 95%;
     transform: scale(2);
     color: rgb(39, 39, 39);
     font-weight: 500;
@@ -239,27 +277,23 @@ to   { opacity: 1; }
 #services {
     margin-top: 4%;
     -moz-border-top-left-radius: 10px;
-    -moz-border-top-right-radius: 10px;
     -webkit-border-radius-top: 10px;
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 #services3 {
     -moz-border-bottom-left-radius: 10px;
-    -moz-border-bottom-right-radius: 10px;
     -webkit-border-radius-bottom: 10px;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 #services,
 #services2,
 #services3 {
-    padding-top: 5.5%;
-    text-align: center;
-    margin-left: 10%;
-    width: 500px;
+    
+    font-weight: 900;
+    padding-top: 7.9%;
+    padding-left: 25%;
     height: 150px;
     background: url("../images/shelf.jpg") 100%;
     background-size: 100% 100%;
@@ -267,29 +301,25 @@ to   { opacity: 1; }
 }
 
 #services4 {
-    margin-top: -30%;
-    -moz-border-top-left-radius: 10px;
-    -moz-border-top-right-radius: 10px;
+    margin-top: 4%;
     -webkit-border-radius-top: 10px;
-    border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 #services6 {
-    -moz-border-bottom-left-radius: 10px;
     -moz-border-bottom-right-radius: 10px;
     -webkit-border-radius-bottom: 10px;
-    border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
+
 
 #services4,
 #services5,
 #services6 {
-    padding-top: 5.5%;
+    font-weight: 900;
+    padding-top: 7.9%;
     text-align: center;
-    margin-left: 55%;
-    width: 500px;
     height: 150px;
     background: url("../images/shelf.jpg") 100%;
     background-size: 100% 100%;
@@ -298,7 +328,7 @@ to   { opacity: 1; }
 
 @-moz-document url-prefix() {
     #services4 {
-        margin-top: -30%;
+        
     }
 }
 
@@ -322,29 +352,30 @@ to   { opacity: 1; }
     margin-left: 2%;
     color: white;
     font-family: "Trirong";
-    font-size: 60px;
+    font-size: 75px;
     font-weight: 900;
     text-align: center;
 }
 
 #schCont {
+    font-weight: 900;
     margin-top: 5%;
-    margin-left: 18%;
+    margin-left: 13%;
     text-align: center;
     color: white;
-    width: 1000px;
+    width: 75%;
 }
 
 .hvr-sweep-to-top {
     text-align: center;
     font-family: "Trirong";
-    padding-top: .5%;
-    margin-left: 41%;
+    padding-top: .7%;
+    margin-left: 40%;
     margin-top: 3%;
     font-weight: 900;
     font-size: 30px;
     color: white;
-    width: 300px;
+    width: 20%;
     height: 75px;
     -moz-border-top-left-radius: 10px;
     -moz-border-top-right-radius: 10px;
@@ -380,6 +411,16 @@ to   { opacity: 1; }
     right: 0;
     bottom: 0;
     background: grey;
+    -moz-border-top-left-radius: 10px;
+    -moz-border-top-right-radius: 10px;
+    -webkit-border-radius-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+    -webkit-border-radius-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     -webkit-transform-origin: 50% 100%;
@@ -393,8 +434,28 @@ to   { opacity: 1; }
   }
   .hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
     color: white;
+    -moz-border-top-left-radius: 10px;
+    -moz-border-top-right-radius: 10px;
+    -webkit-border-radius-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+    -webkit-border-radius-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
   .hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
+    -moz-border-top-left-radius: 10px;
+    -moz-border-top-right-radius: 10px;
+    -webkit-border-radius-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+    -webkit-border-radius-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
   }
@@ -420,10 +481,18 @@ to   { opacity: 1; }
     font-family: "Fredericka The Great";
     font-weight: 900;
     color: black;
-    padding-left: 42%;
+    padding-left: 37%;
     padding-top: 1%;
 
 }
+
+ @media only screen and (max-width: 1295px) {
+    #home,
+    #about {
+      right: 10%;
+  }
+ 
+  
 
 
 
